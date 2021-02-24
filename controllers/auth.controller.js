@@ -1,5 +1,5 @@
 const passport = require('passport');
-const {User} = require('../models');
+const {User} = require('../db/models');
 
 const register = (req, res, next) => {
   User.register(req.body)
