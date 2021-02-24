@@ -28,12 +28,14 @@ const showLoginPage = (req, res) => {
   res.render('login');
 }
 
-const login = passport.authenticate('local', {
-  successRedirect: '/',
-  failureRedirect: '/login',
-  failureFlash: true,
-  successFlash: true
-})
+const login =  (req, res, next) => {
+  return passport.authenticate('local', {
+    successRedirect: '/',
+    failureRedirect: '/login',
+    failureFlash: true,
+    successFlash: true
+  })(req, res, next)
+}
 
 module.exports = {
   register,
