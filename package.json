@@ -1,7 +1,7 @@
 {
   "name": "node-auth-local",
   "version": "1.0.0",
-  "description": "NodeJS authentication app using local strategy",
+  "description": "NodeJS authentication app with local strategy using passport.js",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
