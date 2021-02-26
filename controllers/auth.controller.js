@@ -43,10 +43,16 @@ const whoami = (req, res) => {
   res.render('profile', req.user.dataValues)
 }
 
+const logout = (req, res) => {
+  req.logout();
+  res.redirect('/login');
+}
+
 module.exports = {
   register,
   showRegisterPage,
   showLoginPage,
   login,
-  whoami
+  whoami,
+  logout
 };

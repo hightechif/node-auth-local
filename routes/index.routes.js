@@ -19,6 +19,9 @@ router.get('/login', authController.showLoginPage);
 router.post('/login', authController.login);
 
 // Whoami page
-router.get('/whoami', restrict, authController.whoami)
+router.get('/whoami', restrict, authController.whoami);
+
+// Logout
+router.post('/logout', restrict, authController.logout);
 
 module.exports = router;
