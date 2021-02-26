@@ -10,4 +10,6 @@ const restrict = (req, res, next) => {
   }
 }
 
-module.exports = restrict;
+module.exports = {
+  restrict
+};

@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:false}));
 
 // Menggunakan Middleware Session
 app.use(session({
-  secret: "Binar Secret",
+  secret: "Fadhil Secret", // crucial
   resave: false,
   saveUninitialized: false
 }))
