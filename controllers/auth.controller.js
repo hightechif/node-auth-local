@@ -37,9 +37,16 @@ const login =  (req, res, next) => {
   })(req, res, next)
 }
 
+const whoami = (req, res) => {
+  /* req.user adalah instance dari User Model, hasil autentikasi dari passport. */
+  console.log(req);
+  res.render('profile', req.user.dataValues)
+}
+
 module.exports = {
   register,
   showRegisterPage,
   showLoginPage,
-  login
+  login,
+  whoami
 };
