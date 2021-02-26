@@ -1,8 +1,8 @@
-## Authentication with Local Strategy | Passport.js | NodeJS
+## Authentication with Local Strategy | Passport.js | Node.js
 
 ### Description
 
-This is a simple login system using authentication in NodeJS with express, passportJS, and ejs. This authentication using local strategy.
+This is a simple login system using authentication in Node.js with express, passportJS, and ejs. This authentication using local strategy.
 
 ### Dependency NPM Package
 
