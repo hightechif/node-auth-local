@@ -24,7 +24,9 @@ GET    /                        """Home Page"""
 GET    /register                """Show Register Page"""
 POST   /register                """Register POST handle"""
 GET    /login                   """Show Login Page"""
-POST   /login                   """Login Authentication POST handle"""
+POST   /login                   """Login POST handle"""
+GET    /whoami                  """GET user data"""
+POST   /logout                  """Logout"""
 ```
 
 ### Instalation
